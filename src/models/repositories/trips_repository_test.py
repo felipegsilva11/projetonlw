@@ -12,10 +12,11 @@ def test_create_trip():
     trips_infos = {
         "id": str(uuid.uuid4()),
         "destination": "Osasco",
-        "start_date": datetime.strptime("02-01-2024", "%d-%m-%y"),
-        "end_date": datetime.strptime("02-01-2024", "%d-%m-%y") + timedelta(days=5),
+      "start_date": datetime.strptime("02-01-2024", "%d-%m-%Y"),
+        "end_date": datetime.strptime("02-01-2024", "%d-%m-%Y"),
         "owner_name": "Osvaldo",
         "owner_email": "osvaldo@email.com"
     }
     
     trips_repository.create_trip(trips_infos)
+    
