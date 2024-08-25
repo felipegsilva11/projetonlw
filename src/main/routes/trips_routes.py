@@ -9,7 +9,7 @@ from src.controllers.trip_finder import TripFinder
 from src.controllers.trip_confirmer import TripConfirmer
 
 from src.controllers.link_creator import LinkCreator
-from src.controllers.link_finder import LinkFinder # type: ignore
+from src.controllers.link_finder import LinkFinder 
 
 from src.controllers.participant_creator import ParticipantCreator
 from src.controllers.participant_finder import ParticipantFinder
