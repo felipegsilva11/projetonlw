@@ -22,7 +22,7 @@ class LinksRepository:
         )
         self.__conn.commit()
         
-        def find_links_from_trip(self, trip_id: str) -> List[tuple]:
+    def find_links_from_trip(self, trip_id: str) -> List[tuple]:
             cursor = self.__conn.cursor()
             cursor.execute(
                 '''SELECT * FROM links WHERE trip_id = ?''',(trip_id,)
